@@ -1,0 +1,53 @@
+const path = require ('path');//Contiene métodos para trabajar con rutas
+const axios = require ('axios');//librería para hacer solicitudes HTTP
+const jsdom = require('jsdom');//Transforma el DOM en html
+const { JSDOM } = jsdom;
+const showdown = require('showdown');//Transforma el MD en html
+const colors = require('colors');//Librería para poner colores a la respuestas en consola
+
+//condicionando en la línea 18 para leer todo el archivo MD
+if (path.extname(file) === '.md') {
+   getMd(file)
+
+    .then((fileData) => {
+      console.log(fileData);
+    })
+    .catch((error) => {
+      console.error(error)
+    })
+} else {
+    console.log('Introduce una ruta que contenga un archivo con extención .md')
+}
+
+//Otra expresión regular
+const expReg = /(((https?:\/\/)|(http?:\/\/)|(www\.))[^\s\n]+)(?=\))/g;
+
+//constante y condicionales para dar opción de ingreso de validate y stats al usuario
+let file_or_path = process.argv[2];
+let options = {
+  validate: false,
+  stats: false,
+}
+if(process.argv.includes("--validate") || process.argv.includes("--v")) {
+  options.validate = true;
+}
+if(process.argv.includes("--stats") || process.argv.includes("--s")) {
+  options.stats = true;
+}
+
+//luego de la función que extrae los links poner las condicionales
+
+if(options.validate && options.stats) {
+  /* stats + validate */
+getStatus(url);
+urlStats(url);
+} else if(options.validate) {
+  /* validate function */
+ getStatus(url);
+} else if(options.stats) {
+  /* stats function */
+urlStats(url);
+} else {
+  /* imprimir los links */
+ // console.log("normal");
+}
