@@ -29,23 +29,23 @@ Es un programa que muestra lo que hay dentro de un 'archivo .md', tanto los enla
 ## 2. Diagrama de Flujo
 * A traves del diagrama de flujo se observa la lógica de la librería.
 [DIAGRAMA](https://app.lucidchart.com/invitations/accept/89671d05-cf9b-4476-b1d8-f8456722dd78)
-![diagrama](https://github.com/rosariowrobel/SCL013-md-links/blob/master/images/DiagramaFlujo_md-links.jpg)
+![diagrama](./img/DiagramadeFlujo.jpg)
 ***
 ## 3. Backlog para la implementación de la librería
 * Se creó en TRELLO la organización y planificación del mismo, haciendo uso de objetivo de aprendizaje (por sprint), listas para asignar tareas por funciones y dentro de cada una un checklist con tareas más pequeñas.
 También se encuentran links de aprendizajes sobre NODE.JS y librerías.
-![organizacion](https://github.com/rosariowrobel/SCL013-md-links/blob/master/images/Organizacion.png)
+![organizacion](./img/trello.jpg)
 [TRELLO](https://trello.com/b/tK9EOUan/md-links)
 ***
 ## 4. USO
-* Para acceder se tiene que ingresar al sitio de npm y buscar "rosariowrobel/md-links".
-* Para instalar ingrese npm i rosariowrobel/md-links.
+* Para acceder se tiene que ingresar al sitio de npm y buscar "CM-MD Links".
+* Para instalar ingrese npm i CM-MD Links.
 * Copie el código que se encuentra en el archivo index.js.
 * Para que ejecute ingrese en la terminal >>  node nombre de carpeta ruta del archivo (donde están los archivos .md)
 Ejemplo : node index.js ./README.md
 Al "apretar enter" se imprimira un listado con el link del archivo , su texto y ruta.
 Además de el estado del link
-![uso](https://github.com/rosariowrobel/SCL013-md-links/blob/master/images/uso.png)
+![uso](./img/uso.jpg)
 ## 5. Links de prueba
 [BUENO](https://google.com)
 [BUENO](https://github.com/Marce-8888)
