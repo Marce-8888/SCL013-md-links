@@ -38,8 +38,8 @@ También se encuentran links de aprendizajes sobre NODE.JS y librerías.
 [TRELLO](https://trello.com/b/tK9EOUan/md-links)
 ***
 ## 4. USO
-* Para acceder se tiene que ingresar al sitio de npm y buscar "CM-MD Links".
-* Para instalar ingrese npm i CM-MD Links.
+* Para acceder se tiene que ingresar al sitio de npm y buscar "cm-md-links".
+* Para instalar ingrese npm i cm-md-links.
 * Copie el código que se encuentra en el archivo index.js.
 * Para que ejecute ingrese en la terminal >>  node nombre de carpeta ruta del archivo (donde están los archivos .md)
 Ejemplo : node index.js ./README.md
@@ -50,7 +50,7 @@ Además de el estado del link
 [BUENO](https://google.com)
 [BUENO](https://github.com/Marce-8888)
 [MALO](https://github.com/marc45j)
-[MALO](https://github.com/camiiii)
+[MALO](https://github.com/camiii7t?i)
 ## 6. Autores
 * Camila García
 * Marcela Tancara
